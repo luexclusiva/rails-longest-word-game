@@ -7,9 +7,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
 
   <body>
+    <div style='background-color: pink;padding: 8px;'>
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'New game', new_path %>
+    </div>
     <%= yield %>
   </body>
 </html>
